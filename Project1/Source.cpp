@@ -20,7 +20,7 @@ const char *fragmentShaderSource = "#version 330 core\n"
 "out vec4 FragColor;\n"
 "void main()\n"
 "{\n"
-"   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+"   FragColor = vec4(0.2f, 0.6f, 0.5f, 0.1f);\n"
 "}\n\0";
 
 int main()
@@ -100,15 +100,23 @@ int main()
 	// set up vertex data (and buffer(s)) and configure vertex attributes
 	// ------------------------------------------------------------------
 	float vertices[] = {
-		0.0f,  0.5f, 0.0f,  // top
-		0.5f, -0.5f, 0.0f,  // bottom right
-		-0.5f, -0.5f, 0.0f  // bottom left
-
+		0.5f,  0.5f, 0.0f,  //Vertex 0
+		0.5f, -0.5f, 0.0f,  //Vertex 1
+		-0.5f, -0.5f, 0.0f, //Vertex 2
+		-0.5f,  0.5f, 0.0f, //Vertex 3  
+		-1.0f, -0.5f, 0.0f, //Vertex 4
+		1.00f, 0.5f, 0.0f   //Vertex 5
 	};
 	unsigned int indices[] = {  // note that we start from 0!
-		0, 1, 2  
-		
+		0, 1, 3, //1st Triangle
+		1, 2, 3, //2nd Triangle
+		4, 3, 2, //3rd Triangle
+		5, 0, 1  //4th Triangle
+
 	};
+
+	int num_triangle = sizeof(indices) / 3;
+
 	unsigned int VBO, VAO, EBO;
 	glGenVertexArrays(1, &VAO);
 	glGenBuffers(1, &VBO);
@@ -156,7 +164,8 @@ int main()
 		glUseProgram(shaderProgram);
 		glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
 								//glDrawArrays(GL_TRIANGLES, 0, 6);
-		glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
+
+		glDrawElements(GL_TRIANGLES, num_triangle, GL_UNSIGNED_INT, 0);
 		// glBindVertexArray(0); // no need to unbind it every time 
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
