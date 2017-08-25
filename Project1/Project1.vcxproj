@@ -20,7 +20,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Lib\glad\glad.c" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="shader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="shader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader.fs" />
+    <None Include="shader.vs" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2672BC50-95A3-4859-8DCB-A8316736488D}</ProjectGuid>
