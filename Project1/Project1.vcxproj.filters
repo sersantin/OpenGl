@@ -46,5 +46,11 @@
     <None Include="transform.fs">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="coordinatesystem.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="coordinatesystem.fs">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
