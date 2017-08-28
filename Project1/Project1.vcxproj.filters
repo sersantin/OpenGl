@@ -40,5 +40,11 @@
     <None Include="shader.fs">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="transform.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="transform.fs">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

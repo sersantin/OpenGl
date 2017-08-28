@@ -30,6 +30,8 @@
   <ItemGroup>
     <None Include="shader.fs" />
     <None Include="shader.vs" />
+    <None Include="transform.fs" />
+    <None Include="transform.vs" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2672BC50-95A3-4859-8DCB-A8316736488D}</ProjectGuid>
