@@ -1,4 +1,12 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   main.cpp
+c:\users\sergi\desktop\gymproject\opengl\project1\project1\main.cpp(238): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\sergi\desktop\gymproject\opengl\project1\project1\main.cpp(343): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\sergi\desktop\gymproject\opengl\project1\project1\main.cpp(344): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\sergi\desktop\gymproject\opengl\project1\project1\main.cpp(348): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\sergi\desktop\gymproject\opengl\project1\project1\main.cpp(349): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\sergi\desktop\gymproject\opengl\project1\project1\main.cpp(351): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\sergi\desktop\gymproject\opengl\project1\project1\main.cpp(352): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\sergi\desktop\gymproject\opengl\project1\project1\main.cpp(361): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   Project1.vcxproj -> C:\Users\sergi\Desktop\GYMProject\OpenGL\Project1\Debug\OpenGL.exe
   Project1.vcxproj -> C:\Users\sergi\Desktop\GYMProject\OpenGL\Project1\Debug\OpenGL.pdb (Full PDB)
