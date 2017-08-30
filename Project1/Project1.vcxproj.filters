@@ -32,6 +32,9 @@
     <ClInclude Include="stb_image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="shader.vs">
@@ -52,5 +55,22 @@
     <None Include="coordinatesystem.fs">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="basic_lighting.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="basic_lighting.fs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="lamp.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="lamp.fs">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OpenGL.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
